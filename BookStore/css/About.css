@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+/* setting variables */
+:root {
+  --Snigle-font: "Snigle", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "Lobster", cursive;
+  --light-back: #2e2c2caf;
+  /* 设置渐变色 */
+  --bggradient: linear-gradient(to bottom, #44a08d, #093637);
+  /* --bggradient: linear-gradient(to bottom, #dd2476, #ff512f); */
+  --light-gray: #f2f2f2;
+}
+
+header a {
+  font-family: var(--Snigle-font);
+  font-size: 1.2em;
+  color: whitesmoke;
+}
+
+header {
+  background: var(--bggradient);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 6px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.index .nav-item:last-child {
+  padding-left: 20vmin;
+}
+
+.index .nav-item {
+  padding: 0.9em;
+}
+
+.index .navbar-brand {
+  padding-left: 8rem;
+}
+
+.index .navbar-brand:hover {
+  color: black;
+}
+
+.index .nav-link:hover {
+  color: black;
+}
+
+.index .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+.index .row .col-md-5 img {
+  position: relative;
+  width: 130%;
+  left: -5vmin;
+}
+
+.index .row .col-md-7 {
+  padding: 25vmin 1vmin;
+  padding-bottom: 35vmin;
+  font-family: var(--Rubik);
+  color: white;
+}
+
+/* letter-spacing */
+.index .row .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px
+}
+
+.index .row .col-md-7 h1 {
+  font-size: 8vmin;
+  font-weight: bold;
+  padding: 0.1em, 0em;
+}
+
+/* px and py */
+.index .row .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+/* border-radius */
+.index .row .col-md-7 button {
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+
+
+/*  Section 2  */
+.section-2 {
+  margin-bottom: 8vmin;
+}
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url("../asset/pexels-ksenia-chernaya-3952071.jpg");
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.cover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.cover .content {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 19vmin;
+}
+
+.cover .content>h1 {
+  font-family: var(--Patua);
+  font-size: 6vmin;
+  color: whitesmoke;
+}
+
+.cover .content>p {
+  font-family: var(--Rubik);
+  font-size: 2vmin;
+  color: #e5e5e5;
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 90%;
+  height: 30rem;
+  overflow: hidden;
+  margin: 1rem;
+  border-radius: 1em;
+  box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.numbers {
+  margin-top: -35vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: tomato;
+}
+
+.numbers .rect>p {
+  font-family: var(--Patua);
+}
+
+
+
+/* Section 3 */
+
+.section-3 {
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: var(--bggradient);
+}
+
+.section-3 .col-md-12>h1 {
+  padding: 2em 0 0.5em 0;
+  color: whitesmoke;
+  font-size: 6vmin;
+}
+
+.section-3 .col-md-12>p {
+  padding: 0 4em;
+  padding-bottom: 2em;
+  color: var(--light-gray);
+  font-size: 3vmin;
+}
+
+.section-3 .desktop {
+  background: white;
+  display: inline-block;
+  border-radius: 3em;
+  padding: 2vmin 4.5vmin;
+  margin: 1em;
+}
+
+.section-3 .desktop h3 {
+  font-size: 4vmin;
+}
+
+.section-3 .desktop p {
+  font-size: 2vmin;
+}
+
+/* Section Team */
+
+.section-4 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+}
+
+.section-4 .team {
+  margin-bottom: 8vmin;
+  padding: 0vmin 4vmin;
+}
+
+.section-4 .card {
+  width: 22em;
+  margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card-body>a {
+  font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3rem;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+/* ****************************** footer ***************************** */
+footer {
+  background: var(--bggradient);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p>span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: whitesmoke;
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+/* leave the first i */
+footer .column i+i {
+  padding: 0 0.5em;
+}
+
+
+/* sticky nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
